@@ -1,15 +1,17 @@
 <?php declare(strict_types=1);
 
-namespace Comquer\CompareValues;
+namespace Comquer\CompareValues\Conditions;
 
-class GreaterThan extends CompareValues
+use Comquer\CompareValues\CompareValues;
+
+class SameAs extends CompareValues
 {
     public function __construct($value)
     {
         parent::__construct(
             $value,
             function ($value) : bool {
-                return $value > $this->value;
+                return $value === $this->value;
             }
         );
     }

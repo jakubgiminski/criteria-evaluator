@@ -4,18 +4,20 @@ namespace Comquer\CompareValues;
 
 abstract class CompareValues
 {
+    /** @var mixed */
     protected $value;
 
-    private $compare;
+    /** @var callable */
+    private $evaluateFor;
 
-    public function __construct($value, callable $compare)
+    public function __construct($value, callable $evaluateFor)
     {
         $this->value = $value;
-        $this->compare = $compare;
+        $this->evaluateFor = $evaluateFor;
     }
 
     public function __invoke($value) : bool
     {
-        return (bool)($this->compare)($value);
+        return ($this->evaluateFor)($value);
     }
 }
