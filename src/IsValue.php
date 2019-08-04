@@ -1,16 +1,16 @@
 <?php declare(strict_types=1);
 
-namespace Comquer\Comparator;
+namespace Comquer\CriteriaEvaluator;
 
-use Comquer\Comparator\Conditions\EqualTo;
-use Comquer\Comparator\Conditions\EqualToOneOf;
-use Comquer\Comparator\Conditions\GreaterThan;
-use Comquer\Comparator\Conditions\GreaterThanOrEqualTo;
-use Comquer\Comparator\Conditions\LessThan;
-use Comquer\Comparator\Conditions\LessThanOrEqualTo;
-use Comquer\Comparator\Conditions\NotEqualTo;
-use Comquer\Comparator\Conditions\NotSameAs;
-use Comquer\Comparator\Conditions\SameAs;
+use Comquer\CriteriaEvaluator\Criteria\EqualTo;
+use Comquer\CriteriaEvaluator\Criteria\EqualToOneOf;
+use Comquer\CriteriaEvaluator\Criteria\GreaterThan;
+use Comquer\CriteriaEvaluator\Criteria\GreaterThanOrEqualTo;
+use Comquer\CriteriaEvaluator\Criteria\LessThan;
+use Comquer\CriteriaEvaluator\Criteria\LessThanOrEqualTo;
+use Comquer\CriteriaEvaluator\Criteria\NotEqualTo;
+use Comquer\CriteriaEvaluator\Criteria\NotSameAs;
+use Comquer\CriteriaEvaluator\Criteria\SameAs;
 
 class IsValue
 {

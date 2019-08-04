@@ -1,19 +1,19 @@
 <?php declare(strict_types=1);
 
-namespace Comquer\Comparator\Conditions;
+namespace Comquer\CriteriaEvaluator\Criteria;
 
-use Comquer\Comparator\Comparator;
+use Comquer\CriteriaEvaluator\Evaluator;
 
-class SameAsOneOf extends Comparator
+class EqualToOneOf extends Evaluator
 {
     public function __construct($value)
     {
         parent::__construct(
             $value,
             function ($value) : bool {
-                $isValueSameAs = new SameAs($value);
+                $isValueEqualTo = new EqualTo($value);
                 foreach ($this->value as $value) {
-                    if ($isValueSameAs($value)) {
+                    if ($isValueEqualTo($value)) {
                         return true;
                     }
                 }
@@ -24,6 +24,6 @@ class SameAsOneOf extends Comparator
 
     public static function getName() : string
     {
-        return 'is value same as one of';
+        return 'is value equal to one of';
     }
 }

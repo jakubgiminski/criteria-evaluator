@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace Comquer\Comparator\Conditions;
+namespace Comquer\CriteriaEvaluator\Criteria;
 
-use Comquer\Comparator\Comparator;
+use Comquer\CriteriaEvaluator\Evaluator;
 
-class LessThanOrEqualTo extends Comparator
+class LessThanOrEqualTo extends Evaluator
 {
     public function __construct($value)
     {

@@ -1,12 +1,12 @@
 <?php declare(strict_types=1);
 
-namespace Comquer\Comparator;
+namespace Comquer\CriteriaEvaluator;
 
-use Comquer\Comparator\Conditions\NotEqualTo;
+use Comquer\CriteriaEvaluator\Criteria\NotEqualTo;
 use Comquer\Validator\EntityValidator\EntityValidator;
 use InvalidArgumentException;
 
-abstract class Comparator
+abstract class Evaluator
 {
     /** @var mixed */
     protected $value;

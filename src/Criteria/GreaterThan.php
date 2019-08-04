@@ -1,23 +1,23 @@
 <?php declare(strict_types=1);
 
-namespace Comquer\Comparator\Conditions;
+namespace Comquer\CriteriaEvaluator\Criteria;
 
-use Comquer\Comparator\Comparator;
+use Comquer\CriteriaEvaluator\Evaluator;
 
-class NotEqualTo extends Comparator
+class GreaterThan extends Evaluator
 {
     public function __construct($value)
     {
         parent::__construct(
             $value,
             function ($value) : bool {
-                return $value != $this->value;
+                return $value > $this->value;
             }
         );
     }
 
     public static function getName() : string
     {
-        return 'is value not equal to';
+        return 'is value greater than';
     }
 }

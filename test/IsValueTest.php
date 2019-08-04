@@ -2,7 +2,7 @@
 
 namespace Comquer\ComparatorTest;
 
-use Comquer\Comparator\IsValue;
+use Comquer\CriteriaEvaluator\IsValue;
 use PHPUnit\Framework\TestCase;
 
 class IsValueTest extends TestCase
