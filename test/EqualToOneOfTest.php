@@ -2,7 +2,6 @@
 
 namespace Comquer\ComparatorTest;
 
-use Comquer\CriteriaEvaluator\Criteria\EqualTo;
 use Comquer\CriteriaEvaluator\Criteria\EqualToOneOf;
 use PHPUnit\Framework\TestCase;
 
