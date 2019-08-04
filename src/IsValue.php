@@ -56,16 +56,6 @@ class IsValue
         return new NotEqualTo($value);
     }
 
-    public static function sameAs($value) : callable
-    {
-        return new SameAs($value);
-    }
-
-    public static function notSameAs($value) : callable
-    {
-        return new NotSameAs($value);
-    }
-
     public static function equalToOneOf(iterable $values) : callable
     {
         return new EqualToOneOf($values);

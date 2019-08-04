@@ -57,18 +57,4 @@ class IsValueTest extends TestCase
         self::assertTrue(IsValue::notEqualTo(6)(5));
         self::assertFalse(IsValue::notEqualTo(5)(5));
     }
-
-    /** @test */
-    function evaluates_not_same_as()
-    {
-        self::assertTrue(IsValue::notSameAs(6)(5));
-        self::assertFalse(IsValue::notSameAs(5)(5));
-    }
-
-    /** @test */
-    function evaluates_same_as_one_of()
-    {
-        self::assertTrue(IsValue::sameAsOneOf([1, 2, 3])(2));
-        self::assertFalse(IsValue::sameAsOneOf([1, 2, 3])(4));
-    }
 }
