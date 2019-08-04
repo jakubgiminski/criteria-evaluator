@@ -4,7 +4,6 @@ namespace Comquer\CriteriaEvaluator;
 
 use Comquer\CriteriaEvaluator\Criteria\NotEqualTo;
 use Comquer\Validator\EntityValidator\EntityValidator;
-use InvalidArgumentException;
 
 abstract class Criterion
 {
@@ -41,7 +40,6 @@ abstract class Criterion
         return new static($serialized['value']);
     }
 
-
     private static function validateSerialized(array $serialized) : void
     {
         EntityValidator::validateSerialized(
@@ -50,9 +48,9 @@ abstract class Criterion
             $serialized
         );
 
-        $isNameInvalid = (new NotEqualTo(static::getName()));
-        if ($isNameInvalid($serialized['name'])) {
-            throw new InvalidArgumentException();
+        $nameIsInvalid = (new NotEqualTo(static::getName()));
+        if ($nameIsInvalid($serialized['name'])) {
+            // throw exception
         }
     }
 }
