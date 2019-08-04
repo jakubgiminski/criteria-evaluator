@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace Comquer\CompareValues\Conditions;
+namespace Comquer\Comparator\Conditions;
 
-use Comquer\CompareValues\CompareValues;
+use Comquer\Comparator\Comparator;
 
-class EqualTo extends CompareValues
+class EqualTo extends Comparator
 {
     public function __construct($value)
     {
@@ -14,5 +14,10 @@ class EqualTo extends CompareValues
                 return $value == $this->value;
             }
         );
+    }
+
+    public static function getName() : string
+    {
+        return 'is value equal to';
     }
 }

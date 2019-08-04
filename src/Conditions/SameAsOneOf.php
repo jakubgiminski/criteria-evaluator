@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace Comquer\CompareValues\Conditions;
+namespace Comquer\Comparator\Conditions;
 
-use Comquer\CompareValues\CompareValues;
+use Comquer\Comparator\Comparator;
 
-class SameAsOneOf extends CompareValues
+class SameAsOneOf extends Comparator
 {
     public function __construct($value)
     {
@@ -20,5 +20,10 @@ class SameAsOneOf extends CompareValues
                 return false;
             }
         );
+    }
+
+    public static function getName() : string
+    {
+        return 'is value same as one of';
     }
 }

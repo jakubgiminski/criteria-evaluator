@@ -10,11 +10,13 @@
             "email": "jakub@gigabyte.software"
         }
     ],
-    "require": {},
+    "require": {
+        "comquer/validator": "dev-master"
+    },
     "autoload": {
         "psr-4": {
-            "Comquer\\CompareValues\\": "src/",
-            "Comquer\\CompareValuesTest\\": "test/"
+            "Comquer\\Comparator\\": "src/",
+            "Comquer\\ComparatorTest\\": "test/"
         }
     },
     "description": ""

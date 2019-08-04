@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace Comquer\CompareValues\Conditions;
+namespace Comquer\Comparator\Conditions;
 
-use Comquer\CompareValues\CompareValues;
+use Comquer\Comparator\Comparator;
 
-class GreaterThan extends CompareValues
+class GreaterThan extends Comparator
 {
     public function __construct($value)
     {
@@ -14,5 +14,10 @@ class GreaterThan extends CompareValues
                 return $value > $this->value;
             }
         );
+    }
+
+    public static function getName() : string
+    {
+        return 'is value greater than';
     }
 }

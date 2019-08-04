@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Comquer\CompareValuesTest;
+namespace Comquer\ComparatorTest;
 
-use Comquer\CompareValues\IsValue;
+use Comquer\Comparator\IsValue;
 use PHPUnit\Framework\TestCase;
 
 class IsValueTest extends TestCase
