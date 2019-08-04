@@ -11,7 +11,8 @@
         }
     ],
     "require": {
-        "comquer/validator": "dev-master"
+        "comquer/validator": "dev-master",
+        "comquer/collection": "dev-master"
     },
     "autoload": {
         "psr-4": {

@@ -2,9 +2,9 @@
 
 namespace Comquer\CriteriaEvaluator\Criteria;
 
-use Comquer\CriteriaEvaluator\Evaluator;
+use Comquer\CriteriaEvaluator\Criterion;
 
-class GreaterThanOrEqualTo extends Evaluator
+final class GreaterThanOrEqualTo extends Criterion
 {
     public function __construct($value)
     {

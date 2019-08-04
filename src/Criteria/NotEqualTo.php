@@ -2,9 +2,9 @@
 
 namespace Comquer\CriteriaEvaluator\Criteria;
 
-use Comquer\CriteriaEvaluator\Evaluator;
+use Comquer\CriteriaEvaluator\Criterion;
 
-class NotEqualTo extends Evaluator
+final class NotEqualTo extends Criterion
 {
     public function __construct($value)
     {

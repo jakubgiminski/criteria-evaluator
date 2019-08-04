@@ -6,7 +6,7 @@ use Comquer\CriteriaEvaluator\Criteria\NotEqualTo;
 use Comquer\Validator\EntityValidator\EntityValidator;
 use InvalidArgumentException;
 
-abstract class Evaluator
+abstract class Criterion
 {
     /** @var mixed */
     protected $value;
