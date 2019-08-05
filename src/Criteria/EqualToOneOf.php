@@ -2,7 +2,7 @@
 
 namespace Comquer\CriteriaEvaluator\Criteria;
 
-use Comquer\CriteriaEvaluator\Criterion;
+use Comquer\CriteriaEvaluator\Criterion\Criterion;
 
 final class EqualToOneOf extends Criterion
 {
