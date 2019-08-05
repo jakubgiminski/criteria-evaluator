@@ -59,8 +59,8 @@ class IsValue
         return new EqualToOneOf($values);
     }
 
-    public static function sameAsOneOf(iterable $values) : callable
+    public static function oneOf(iterable $values) : callable
     {
-        return new EqualToOneOf($values);
+        return self::equalToOneOf($values);
     }
 }
