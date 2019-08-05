@@ -1,5 +1,5 @@
 {
-    "name": "comquer/criteria-evaluator",
+    "name": "comquer/criteria",
     "type": "library",
     "require-dev": {
         "phpunit/phpunit": "^8.3"
