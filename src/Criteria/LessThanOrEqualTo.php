@@ -18,6 +18,6 @@ final class LessThanOrEqualTo extends Criterion
 
     public static function getName() : string
     {
-        return 'is value greater than or equal to';
+        return 'is value less than or equal to';
     }
 }

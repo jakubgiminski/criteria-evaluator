@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Comquer\ComparatorTest;
+namespace Comquer\ComparatorTest\Criteria;
 
 use Comquer\CriteriaEvaluator\Criteria\GreaterThan;
 use PHPUnit\Framework\TestCase;
