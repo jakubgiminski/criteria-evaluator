@@ -18,8 +18,6 @@ abstract class Criterion
         $this->evaluateFor = $evaluateFor;
     }
 
-    abstract public static function getName() : string;
-
     public function __invoke($value) : bool
     {
         return ($this->evaluateFor)($value);
@@ -39,4 +37,6 @@ abstract class Criterion
 
         return new static($serialized['value']);
     }
+
+    abstract public static function getName() : string;
 }

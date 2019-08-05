@@ -12,7 +12,6 @@ use Comquer\CriteriaEvaluator\Criteria\GreaterThanOrEqualTo;
 use Comquer\CriteriaEvaluator\Criteria\LessThan;
 use Comquer\CriteriaEvaluator\Criteria\LessThanOrEqualTo;
 use Comquer\CriteriaEvaluator\Criteria\NotEqualTo;
-use Comquer\CriteriaEvaluator\Criterion\Criterion;
 
 class CriterionClassNameProvider extends Collection
 {
